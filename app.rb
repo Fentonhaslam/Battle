@@ -3,7 +3,7 @@ require "sinatra/base"
 
 class Battle < Sinatra::Base
   enable :sessions
-
+  DEFAULT_HEALTH_POINTS = 100
   get "/" do
     erb :index
   end
